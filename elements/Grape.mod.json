@@ -7,9 +7,7 @@
     "customModelName": "Normal",
     "name": "Grape",
     "rarity": "COMMON",
-    "specialInfo": [
-      "haha grape go brrr"
-    ],
+    "specialInfo": [],
     "creativeTab": {
       "value": "FOOD"
     },
