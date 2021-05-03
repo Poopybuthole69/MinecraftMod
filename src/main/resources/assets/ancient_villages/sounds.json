@@ -1,0 +1,12 @@
+{
+  "dark_disk_music": {
+    "category": "record",
+    "subtitle": "subtitles.dark_disk_music",
+    "sounds": [
+      {
+        "name": "ancient_villages:enderwave_music_disc_idea_for_the_end_in_minecraft",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ancient_villages:block/fridge"
+    },
+    "facing=east": {
+      "model": "ancient_villages:block/fridge",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ancient_villages:block/fridge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ancient_villages:block/fridge",
+      "y": 270
+    }
+  }
+}

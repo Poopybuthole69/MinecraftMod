@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ancient_villages:blocks/fridge_other",
+    "up": "ancient_villages:blocks/fridge_other",
+    "north": "ancient_villages:blocks/fridge",
+    "east": "ancient_villages:blocks/fridge_other",
+    "south": "ancient_villages:blocks/fridge_other",
+    "west": "ancient_villages:blocks/fridge_other",
+    "particle": "ancient_villages:blocks/fridge_other"
+  }
+}

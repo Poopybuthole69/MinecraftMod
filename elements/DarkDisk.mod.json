@@ -1,0 +1,19 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "dark_disk",
+    "name": "Music disc",
+    "description": "Elias Brix - Darkwave",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:dark_disk_music"
+    },
+    "specialInfo": [
+      "This one of a kind disc is found in the dark dimension"
+    ],
+    "hasGlow": false
+  }
+}

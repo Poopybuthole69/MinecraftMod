@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "going_too_deep": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "ancient_villages:dark_dimension"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

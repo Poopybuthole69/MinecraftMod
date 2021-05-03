@@ -1,0 +1,49 @@
+{
+  "_fv": 18,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "taiga"
+      },
+      {
+        "value": "forest"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:AshedDirt"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:DarkWater"
+    },
+    "airColor": {
+      "value": -6710887,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": true,
+    "doesWaterVaporize": false,
+    "sleepResult": "DENY",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "Blocks.MOSSY_COBBLESTONE"
+    },
+    "portalParticles": {
+      "value": "ASH"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": ""
+    },
+    "igniterName": "Infected flint and steel",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "infested_flint_and_steel",
+    "portalTexture": "dark_dimension_portal",
+    "enablePortal": true
+  }
+}

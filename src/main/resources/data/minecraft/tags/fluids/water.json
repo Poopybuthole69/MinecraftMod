@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ancient_villages:dark_water",
+    "ancient_villages:dark_water_flowing",
+    "ancient_villages:glow_water",
+    "ancient_villages:glow_water_flowing"
+  ]
+}

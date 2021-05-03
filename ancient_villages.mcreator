@@ -1,0 +1,217 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "DarkDisk",
+      "type": "musicdisc",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_disk"
+    },
+    {
+      "name": "AshedGrass",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashed_grass"
+    },
+    {
+      "name": "AshedDirt",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashed_dirt"
+    },
+    {
+      "name": "DarkWaterMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_water_mobplayer_collides_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkWater",
+      "type": "fluid",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_water"
+    },
+    {
+      "name": "DarkDimension",
+      "type": "dimension",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_dimension",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "GoingTooDeep",
+      "type": "achievement",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "going_too_deep"
+    },
+    {
+      "name": "DarkDimensionPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_dimension_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlowWaterMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_water_mobplayer_collides_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlowWater",
+      "type": "fluid",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glow_water"
+    },
+    {
+      "name": "GoldBricks",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold_bricks"
+    },
+    {
+      "name": "GoldBricksRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold_bricks_recipe"
+    },
+    {
+      "name": "FridgeBlockDestroyedByExplosion",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fridge_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fridge",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fridge"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "dark_disk_music",
+      "files": [
+        "enderwave_music_disc_idea_for_the_end_in_minecraft"
+      ],
+      "category": "record",
+      "subtitle": "Dark disk"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.ancient_villages.dark_dimension": "Infected flint and steel",
+      "item.ancient_villages.dark_disk": "Music disc",
+      "block.ancient_villages.ashed_grass": "Ashed Grass",
+      "item.ancient_villages.glow_water_bucket": "GlowWater Bucket",
+      "item.ancient_villages.dark_disk.desc": "Elias Brix - Darkwave",
+      "subtitles.dark_disk_music": "Dark disk",
+      "fluid.dark_water": "DarkWater",
+      "block.ancient_villages.fridge": "Fridge",
+      "block.ancient_villages.ashed_dirt": "Ashed Dirt",
+      "item.ancient_villages.dark_water_bucket": "DarkWater Bucket",
+      "advancements.going_too_deep.title": "Going Too Deep",
+      "advancements.going_too_deep.descr": "You\u0027ve went too far, and too deep",
+      "fluid.glow_water": "GlowWater",
+      "block.ancient_villages.gold_bricks": "Plated Gold Bricks"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "ancient_villages",
+    "modName": "Ancient villages",
+    "version": "1.0.0",
+    "author": "Martijn, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.ancientvillages",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100116710
+}

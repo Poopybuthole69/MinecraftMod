@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ancient_villages:blocks/ashed_dirt",
+    "up": "ancient_villages:blocks/ashed_dirt",
+    "north": "ancient_villages:blocks/ashed_dirt",
+    "east": "ancient_villages:blocks/ashed_dirt",
+    "south": "ancient_villages:blocks/ashed_dirt",
+    "west": "ancient_villages:blocks/ashed_dirt",
+    "particle": "ancient_villages:blocks/ashed_dirt"
+  }
+}
