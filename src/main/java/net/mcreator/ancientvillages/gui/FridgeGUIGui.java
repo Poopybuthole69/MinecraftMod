@@ -75,7 +75,7 @@ public class FridgeGUIGui extends AncientVillagesModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(5);
+			this.internal = new ItemStackHandler(6);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -123,6 +123,12 @@ public class FridgeGUIGui extends AncientVillagesModElements.ModElement {
 			}));
 			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 115, 42) {
 			}));
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 152, 23) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
@@ -148,18 +154,18 @@ public class FridgeGUIGui extends AncientVillagesModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 5) {
-					if (!this.mergeItemStack(itemstack1, 5, this.inventorySlots.size(), true)) {
+				if (index < 6) {
+					if (!this.mergeItemStack(itemstack1, 6, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 5, false)) {
-					if (index < 5 + 27) {
-						if (!this.mergeItemStack(itemstack1, 5 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 6, false)) {
+					if (index < 6 + 27) {
+						if (!this.mergeItemStack(itemstack1, 6 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 5, 5 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 6, 6 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
