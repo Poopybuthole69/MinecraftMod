@@ -85,7 +85,7 @@
     "particleSpawningRadious": 0.2,
     "particleAmount": 1,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "FridgeGUI",
     "openGUIOnRightClick": true,
     "inventorySize": 5,
     "inventoryStackSize": 64,
