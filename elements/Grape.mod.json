@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "infested_flint_and_steel",
+    "texture": "grape",
     "customModelName": "Normal",
     "name": "Grape",
     "rarity": "COMMON",
