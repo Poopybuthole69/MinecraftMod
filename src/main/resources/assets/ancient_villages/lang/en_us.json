@@ -15,7 +15,6 @@
   "subtitles.wiisports": "Wii Sports - Wii Sports Music",
   "item.ancient_villages.rubyshovel": "Ruby Shovel",
   "item.ancient_villages.wii_sports_disc": "Wii Sports Disc",
-  "biome.ancient_villages.villager_plains": "Villager Plains",
   "item.ancient_villages.rubysword": "Ruby Sword",
   "item.ancient_villages.beer": "Quick Beer",
   "subtitles.dark_disk_music": "Dark disk",
@@ -30,8 +29,6 @@
   "advancements.going_too_deep.descr": "You\u0027ve went too far, and too deep",
   "fluid.glow_water": "GlowWater",
   "item.ancient_villages.rubypickaxe": "Ruby Pickaxe",
-  "item.ancient_villages.villager_dimension": "Blazed wand",
   "block.ancient_villages.gold_bricks": "Plated Gold Bricks",
-  "biome.ancient_villages.villager_biome": "Villager Biome",
   "block.ancient_villages.grape_plant_empty": "Grape Plant Empty"
 }
