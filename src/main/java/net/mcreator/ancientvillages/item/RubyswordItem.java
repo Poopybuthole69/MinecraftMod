@@ -1,21 +1,12 @@
 
 package net.mcreator.ancientvillages.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-
-import net.mcreator.ancientvillages.AncientVillagesModElements;
-
 @AncientVillagesModElements.ModElement.Tag
 public class RubyswordItem extends AncientVillagesModElements.ModElement {
+
 	@ObjectHolder("ancient_villages:rubysword")
 	public static final Item block = null;
+
 	public RubyswordItem(AncientVillagesModElements instance) {
 		super(instance, 16);
 	}
@@ -47,6 +38,8 @@ public class RubyswordItem extends AncientVillagesModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(RubyItem.block, (int) (1)));
 			}
 		}, 3, 1f, new Item.Properties().group(ItemGroup.TOOLS)) {
+
 		}.setRegistryName("rubysword"));
 	}
+
 }
