@@ -344,6 +344,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "villager"
+    },
+    {
+      "name": "VillagerForrest",
+      "type": "biome",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "villager_forrest"
     }
   ],
   "variable_elements": [],
@@ -367,8 +376,9 @@
   ],
   "language_map": {
     "en_us": {
-      "item.ancient_villages.dark_dimension": "Infected flint and steel",
       "item.ancient_villages.ruby": "Ruby",
+      "item.ancient_villages.dark_dimension": "Infected flint and steel",
+      "biome.ancient_villages.villager_forrest": "Villager Forrest",
       "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
       "item.ancient_villages.dark_disk": "Music disc",
       "block.ancient_villages.ashed_grass": "Ashed Grass",
