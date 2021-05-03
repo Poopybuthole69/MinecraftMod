@@ -86,7 +86,7 @@
     "particleAmount": 1,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
+    "openGUIOnRightClick": true,
     "inventorySize": 5,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
