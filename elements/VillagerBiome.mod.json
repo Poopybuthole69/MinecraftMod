@@ -1,0 +1,156 @@
+{
+  "_fv": 18,
+  "_type": "biome",
+  "definition": {
+    "name": "Villager Biome",
+    "groundBlock": {
+      "value": "Blocks.MAGMA"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.LAVA"
+    },
+    "airColor": {
+      "value": -10092544,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -13421824,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -6750208,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -13408768,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -16711936,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": "ambient.crimson_forest.additions"
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": "ambient.crimson_forest.mood"
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "WHITE_ASH"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "savanna"
+    },
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "biomeType": "WARM",
+    "spawnBiome": true,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 3,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 1,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 1,
+    "sandPatchesPerChunk": 2,
+    "gravelPatchesPerChunk": 2,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 1,
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 7,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "Blocks.LOG"
+    },
+    "treeBranch": {
+      "value": "Blocks.LOG"
+    },
+    "treeVines": {
+      "value": "Blocks.WEEPING_VINES"
+    },
+    "treeFruits": {
+      "value": "Blocks.CARROTS"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": true,
+    "spawnPillagerOutpost": false,
+    "villageType": "desert",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": true,
+    "spawnDesertPyramid": true,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": true,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "ExtraEmeraldOre",
+      "Fossils",
+      "MonsterRooms",
+      "SedimentDisks",
+      "TaigaRocks"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityEnderCrystal"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityHoglin"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 5,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityHusk"
+        },
+        "minGroup": 1,
+        "maxGroup": 6,
+        "weight": 5,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityZombieHorse"
+        },
+        "minGroup": 2,
+        "maxGroup": 2,
+        "weight": 1,
+        "spawnType": "ambient"
+      },
+      {
+        "entity": {
+          "value": "EntityPiglinBrute"
+        },
+        "minGroup": 1,
+        "maxGroup": 4,
+        "weight": 6,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

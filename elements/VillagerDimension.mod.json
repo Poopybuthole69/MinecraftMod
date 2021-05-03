@@ -1,0 +1,60 @@
+{
+  "_fv": 18,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:VillagerForrest"
+      },
+      {
+        "value": "CUSTOM:VillagerPlains"
+      },
+      {
+        "value": "CUSTOM:VillagerBiome"
+      },
+      {
+        "value": "savanna"
+      },
+      {
+        "value": "badlands"
+      },
+      {
+        "value": "wooded_badlands_plateau"
+      },
+      {
+        "value": "warm_ocean"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.STONE#0"
+    },
+    "fluidBlock": {
+      "value": "Blocks.WATER"
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": true,
+    "sleepResult": "DENY",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "CUSTOM:Blockofruby"
+    },
+    "portalParticles": {
+      "value": "TOWN_AURA"
+    },
+    "portalLuminance": 2,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Blazed wand",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "blazed_wand",
+    "portalTexture": "villager_portal",
+    "enablePortal": true
+  }
+}

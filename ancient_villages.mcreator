@@ -442,6 +442,49 @@
       "ids": {},
       "registry_name": "rubypickaxe",
       "path": "~/Rubys"
+    },
+    {
+      "name": "VillagerPlains",
+      "type": "biome",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "villager_plains",
+      "path": "~/Villager stuff"
+    },
+    {
+      "name": "VillagerBiome",
+      "type": "biome",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "villager_biome",
+      "path": "~/Villager stuff"
+    },
+    {
+      "name": "VillagerDimension",
+      "type": "dimension",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "villager_dimension",
+      "metadata": {
+        "ep": true
+      },
+      "path": "~/Villager stuff"
+    },
+    {
+      "name": "FridgeRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fridge_recipe",
+      "path": "~/blocks"
     }
   ],
   "variable_elements": [],
@@ -465,12 +508,12 @@
   ],
   "language_map": {
     "en_us": {
-      "item.ancient_villages.dark_dimension": "Infected flint and steel",
       "item.ancient_villages.ruby": "Ruby",
+      "item.ancient_villages.dark_dimension": "Infected flint and steel",
       "biome.ancient_villages.villager_forrest": "Villager Forrest",
       "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
-      "item.ancient_villages.dark_disk": "Music disc",
       "item.ancient_villages.rubyhoe": "Ruby Hoe",
+      "item.ancient_villages.dark_disk": "Music disc",
       "block.ancient_villages.ashed_grass": "Ashed Grass",
       "item.ancient_villages.glow_water_bucket": "GlowWater Bucket",
       "item.ancient_villages.dark_disk.desc": "Elias Brix - Darkwave",
@@ -481,6 +524,7 @@
       "subtitles.wiisports": "Wii Sports - Wii Sports Music",
       "item.ancient_villages.rubyshovel": "Ruby Shovel",
       "item.ancient_villages.wii_sports_disc": "Wii Sports Disc",
+      "biome.ancient_villages.villager_plains": "Villager Plains",
       "item.ancient_villages.rubysword": "Ruby Sword",
       "item.ancient_villages.beer": "Quick Beer",
       "subtitles.dark_disk_music": "Dark disk",
@@ -495,7 +539,9 @@
       "advancements.going_too_deep.descr": "You\u0027ve went too far, and too deep",
       "fluid.glow_water": "GlowWater",
       "item.ancient_villages.rubypickaxe": "Ruby Pickaxe",
+      "item.ancient_villages.villager_dimension": "Blazed wand",
       "block.ancient_villages.gold_bricks": "Plated Gold Bricks",
+      "biome.ancient_villages.villager_biome": "Villager Biome",
       "block.ancient_villages.grape_plant_empty": "Grape Plant Empty"
     }
   },
