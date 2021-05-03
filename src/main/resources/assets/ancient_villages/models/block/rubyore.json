@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ancient_villages:blocks/ruby_ore",
+    "up": "ancient_villages:blocks/ruby_ore",
+    "north": "ancient_villages:blocks/ruby_ore",
+    "east": "ancient_villages:blocks/ruby_ore",
+    "south": "ancient_villages:blocks/ruby_ore",
+    "west": "ancient_villages:blocks/ruby_ore",
+    "particle": "ancient_villages:blocks/ruby_ore"
+  }
+}

@@ -299,6 +299,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "got_beer"
+    },
+    {
+      "name": "Blockofruby",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blockofruby"
+    },
+    {
+      "name": "Rubyore",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyore"
+    },
+    {
+      "name": "Ruby",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby"
     }
   ],
   "variable_elements": [],
