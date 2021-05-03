@@ -12,12 +12,10 @@
   "block.ancient_villages.fridge": "Fridge",
   "block.ancient_villages.ashed_dirt": "Ashed Dirt",
   "item.ancient_villages.dark_water_bucket": "DarkWater Bucket",
-  "block.ancient_villages.grape_plant": "Grape Plant",
   "advancements.going_too_deep.title": "Going Too Deep",
   "subtitles.wiisports": "Wii Sports - Wii Sports Music",
   "advancements.going_too_deep.descr": "You\u0027ve went too far, and too deep",
   "fluid.glow_water": "GlowWater",
   "block.ancient_villages.gold_bricks": "Plated Gold Bricks",
-  "item.ancient_villages.wii_sports_disc": "Wii Sports Disc",
-  "block.ancient_villages.grape_plant_empty": "Grape Plant Empty"
+  "item.ancient_villages.wii_sports_disc": "Wii Sports Disc"
 }

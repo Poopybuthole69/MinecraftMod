@@ -1,0 +1,31 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "ancient_villages:beer"
+    },
+    "title": {
+      "translate": "advancements.got_beer.title"
+    },
+    "description": {
+      "translate": "advancements.got_beer.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "got_beer": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "ancient_villages:beer"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  }
+}
