@@ -214,6 +214,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fridge_gui"
+    },
+    {
+      "name": "GotBeer",
+      "type": "achievement",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "got_beer"
     }
   ],
   "variable_elements": [],
@@ -238,6 +247,7 @@
   "language_map": {
     "en_us": {
       "item.ancient_villages.dark_dimension": "Infected flint and steel",
+      "advancements.got_beer.title": "Drink Beer",
       "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
       "item.ancient_villages.beer": "Quick Beer",
       "item.ancient_villages.dark_disk": "Music disc",
@@ -249,6 +259,7 @@
       "fluid.dark_water": "DarkWater",
       "block.ancient_villages.fridge": "Fridge",
       "block.ancient_villages.ashed_dirt": "Ashed Dirt",
+      "advancements.got_beer.descr": "You just drink you first beer!",
       "item.ancient_villages.dark_water_bucket": "DarkWater Bucket",
       "advancements.going_too_deep.title": "Going Too Deep",
       "subtitles.wiisports": "Wii Sports - Wii Sports Music",
