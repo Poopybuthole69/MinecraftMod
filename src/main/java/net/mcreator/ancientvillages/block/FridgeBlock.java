@@ -15,7 +15,6 @@ import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.Explosion;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockRayTraceResult;
@@ -49,24 +48,20 @@ import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.ancientvillages.procedures.FridgeBlockIsPlacedByProcedure;
-import net.mcreator.ancientvillages.procedures.FridgeBlockDestroyedByExplosionProcedure;
 import net.mcreator.ancientvillages.gui.FridgeGUIGui;
 import net.mcreator.ancientvillages.AncientVillagesModElements;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
-import java.util.Map;
 import java.util.List;
-import java.util.HashMap;
 import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
@@ -123,37 +118,16 @@ public class FridgeBlock extends AncientVillagesModElements.ModElement {
 		}
 
 		@Override
+		public PushReaction getPushReaction(BlockState state) {
+			return PushReaction.BLOCK;
+		}
+
+		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
-		public void onExplosionDestroy(World world, BlockPos pos, Explosion e) {
-			super.onExplosionDestroy(world, pos, e);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("world", world);
-				FridgeBlockDestroyedByExplosionProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
-		public void onBlockPlacedBy(World world, BlockPos pos, BlockState state, LivingEntity entity, ItemStack itemstack) {
-			super.onBlockPlacedBy(world, pos, state, entity, itemstack);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				FridgeBlockIsPlacedByProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override
@@ -176,12 +150,6 @@ public class FridgeBlock extends AncientVillagesModElements.ModElement {
 								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
 					}
 				}, new BlockPos(x, y, z));
-			}
-			Direction direction = hit.getFace();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				FridgeBlockIsPlacedByProcedure.executeProcedure($_dependencies);
 			}
 			return ActionResultType.SUCCESS;
 		}

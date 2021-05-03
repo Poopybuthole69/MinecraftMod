@@ -149,24 +149,6 @@
       "path": "~/blocks"
     },
     {
-      "name": "FridgeBlockDestroyedByExplosion",
-      "type": "procedure",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "fridge_block_destroyed_by_explosion",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/blocks"
-    },
-    {
       "name": "Fridge",
       "type": "block",
       "sortid": 8,
@@ -497,24 +479,6 @@
       "path": "~/Rubys"
     },
     {
-      "name": "FridgeBlockIsPlacedBy",
-      "type": "procedure",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "fridge_block_is_placed_by",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/blocks"
-    },
-    {
       "name": "HardenedLog",
       "type": "block",
       "sortid": 25,
@@ -535,22 +499,34 @@
       "path": "~/blocks"
     },
     {
-      "name": "FridgeUpdateTick",
-      "type": "procedure",
+      "name": "Ammo",
+      "type": "item",
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fridge_update_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entityiterator",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/blocks"
+      "registry_name": "ammo",
+      "path": "~/Tools"
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bullet",
+      "path": "~/Tools"
+    },
+    {
+      "name": "Gun",
+      "type": "gun",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gun",
+      "path": "~/Tools"
     }
   ],
   "variable_elements": [],
@@ -580,6 +556,7 @@
       "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
       "item.ancient_villages.rubyhoe": "Ruby Hoe",
       "item.ancient_villages.dark_disk": "Music disc",
+      "item.ancient_villages.ammo": "Ammo",
       "block.ancient_villages.ashed_grass": "Ashed Grass",
       "item.ancient_villages.glow_water_bucket": "GlowWater Bucket",
       "item.ancient_villages.dark_disk.desc": "Elias Brix - Darkwave",
@@ -595,9 +572,11 @@
       "item.ancient_villages.rubysword": "Ruby Sword",
       "item.ancient_villages.beer": "Quick Beer",
       "block.ancient_villages.hardened_log": "Hardened Log",
+      "item.ancient_villages.bullet": "Bullet",
       "subtitles.dark_disk_music": "Dark disk",
       "item.ancient_villages.grape": "Grape",
       "block.ancient_villages.blockofruby": "Blockofruby",
+      "item.ancient_villages.gun": "Gun",
       "block.ancient_villages.fridge": "Fridge",
       "block.ancient_villages.ashed_dirt": "Ashed Dirt",
       "block.ancient_villages.rubyore": "Rubyore",

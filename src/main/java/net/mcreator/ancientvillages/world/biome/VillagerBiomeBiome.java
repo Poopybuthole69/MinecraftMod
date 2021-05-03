@@ -142,7 +142,7 @@ public class VillagerBiomeBiome extends AncientVillagesModElements.ModElement {
 				DefaultBiomeFeatures.withDisks(biomeGenerationSettings);
 				DefaultBiomeFeatures.withForestRocks(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.END_CRYSTAL, 20, 1, 1));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.END_CRYSTAL, 2, 1, 1));
 				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.HOGLIN, 5, 1, 3));
 				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.HUSK, 5, 1, 6));
 				mobSpawnInfo.withSpawner(EntityClassification.AMBIENT, new MobSpawnInfo.Spawners(EntityType.ZOMBIE_HORSE, 1, 2, 2));
