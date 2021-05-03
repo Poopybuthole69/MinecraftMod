@@ -205,6 +205,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "beer"
+    },
+    {
+      "name": "FridgeGUI",
+      "type": "gui",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fridge_gui"
     }
   ],
   "variable_elements": [],
