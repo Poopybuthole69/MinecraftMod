@@ -8,5 +8,15 @@
         "stream": true
       }
     ]
+  },
+  "wiisports": {
+    "category": "record",
+    "subtitle": "subtitles.wiisports",
+    "sounds": [
+      {
+        "name": "ancient_villages:wii_sports_-_wii_sports_theme",
+        "stream": true
+      }
+    ]
   }
 }

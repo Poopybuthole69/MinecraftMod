@@ -47,6 +47,8 @@ public class AncientVillagesModElements {
 	public AncientVillagesModElements() {
 		sounds.put(new ResourceLocation("ancient_villages", "dark_disk_music"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("ancient_villages", "dark_disk_music")));
+		sounds.put(new ResourceLocation("ancient_villages", "wiisports"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("ancient_villages", "wiisports")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("ancient_villages").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

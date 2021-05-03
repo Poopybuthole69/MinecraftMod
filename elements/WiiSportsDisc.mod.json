@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "wiisports_disc",
+    "name": "Wii Sports Disc",
+    "description": "Wii Sports - Wii Sports Music",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:wiisports"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}
