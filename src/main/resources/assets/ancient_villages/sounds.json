@@ -1,4 +1,14 @@
 {
+  "gunshot": {
+    "category": "player",
+    "subtitle": "subtitles.gunshot",
+    "sounds": [
+      {
+        "name": "ancient_villages:realistic_gunshot_sound_effect",
+        "stream": false
+      }
+    ]
+  },
   "dark_disk_music": {
     "category": "record",
     "subtitle": "subtitles.dark_disk_music",

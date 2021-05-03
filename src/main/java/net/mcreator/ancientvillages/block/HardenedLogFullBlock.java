@@ -35,7 +35,7 @@ public class HardenedLogFullBlock extends AncientVillagesModElements.ModElement 
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.STONE).hardnessAndResistance(2f, 15f).setLightLevel(s -> 0).harvestLevel(2)
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.STONE).hardnessAndResistance(2f, 15f).setLightLevel(s -> 0).harvestLevel(1)
 					.harvestTool(ToolType.AXE).setRequiresTool().slipperiness(0.5f));
 			setRegistryName("hardened_log_full");
 		}

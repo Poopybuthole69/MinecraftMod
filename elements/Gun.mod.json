@@ -17,15 +17,15 @@
       "value": "CUSTOM:Ammo"
     },
     "shootConstantly": false,
-    "usageCount": 400,
+    "usageCount": 45,
     "actionSound": {
-      "value": "block.snow.break"
+      "value": "CUSTOM:gunshot"
     },
     "hasGlow": false,
-    "animation": "bow",
+    "animation": "none",
     "enableMeleeDamage": true,
     "damageVsEntity": 1.5,
-    "bulletPower": 1.0,
+    "bulletPower": 5.0,
     "bulletDamage": 5.0,
     "bulletKnockback": 3,
     "bulletParticles": true,
