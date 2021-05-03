@@ -1,0 +1,42 @@
+{
+  "group": "ancient_villages",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "ancient_villages:ruby"
+    },
+    "1": {
+      "item": "ancient_villages:ruby"
+    },
+    "2": {
+      "item": "ancient_villages:ruby"
+    },
+    "3": {
+      "item": "ancient_villages:ruby"
+    },
+    "4": {
+      "item": "ancient_villages:ruby"
+    },
+    "5": {
+      "item": "ancient_villages:ruby"
+    },
+    "6": {
+      "item": "ancient_villages:ruby"
+    },
+    "7": {
+      "item": "ancient_villages:ruby"
+    },
+    "8": {
+      "item": "ancient_villages:ruby"
+    }
+  },
+  "result": {
+    "item": "ancient_villages:blockofruby",
+    "count": 1
+  }
+}
