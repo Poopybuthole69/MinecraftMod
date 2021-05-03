@@ -8,7 +8,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_disk"
+      "registry_name": "dark_disk",
+      "path": "~/Dark Dimension"
     },
     {
       "name": "AshedGrass",
@@ -17,7 +18,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ashed_grass"
+      "registry_name": "ashed_grass",
+      "path": "~/Dark Dimension"
     },
     {
       "name": "AshedDirt",
@@ -26,7 +28,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ashed_dirt"
+      "registry_name": "ashed_dirt",
+      "path": "~/Dark Dimension"
     },
     {
       "name": "DarkWaterMobplayerCollidesBlock",
@@ -43,7 +46,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Dark Dimension"
     },
     {
       "name": "DarkWater",
@@ -52,7 +56,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dark_water"
+      "registry_name": "dark_water",
+      "path": "~/Dark Dimension"
     },
     {
       "name": "DarkDimension",
@@ -64,7 +69,8 @@
       "registry_name": "dark_dimension",
       "metadata": {
         "ep": true
-      }
+      },
+      "path": "~/Dark Dimension"
     },
     {
       "name": "GoingTooDeep",
@@ -73,7 +79,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "going_too_deep"
+      "registry_name": "going_too_deep",
+      "path": "~/Dark Dimension"
     },
     {
       "name": "DarkDimensionPlayerEntersDimension",
@@ -90,7 +97,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Dark Dimension"
     },
     {
       "name": "GlowWaterMobplayerCollidesBlock",
@@ -107,7 +115,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Dark Dimension"
     },
     {
       "name": "GlowWater",
@@ -116,7 +125,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "glow_water"
+      "registry_name": "glow_water",
+      "path": "~/Dark Dimension"
     },
     {
       "name": "GoldBricks",
@@ -125,7 +135,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "gold_bricks"
+      "registry_name": "gold_bricks",
+      "path": "~/blocks"
     },
     {
       "name": "GoldBricksRecipe",
@@ -134,7 +145,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "gold_bricks_recipe"
+      "registry_name": "gold_bricks_recipe",
+      "path": "~/blocks"
     },
     {
       "name": "FridgeBlockDestroyedByExplosion",
@@ -151,7 +163,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/blocks"
     },
     {
       "name": "Fridge",
@@ -160,7 +173,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fridge"
+      "registry_name": "fridge",
+      "path": "~/blocks"
     },
     {
       "name": "Grape",
@@ -169,7 +183,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "grape"
+      "registry_name": "grape",
+      "path": "~/food"
     },
     {
       "name": "WiiSportsDisc",
@@ -195,7 +210,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/food"
     },
     {
       "name": "Beer",
@@ -204,7 +220,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "beer"
+      "registry_name": "beer",
+      "path": "~/food"
     },
     {
       "name": "FridgeGUI",
@@ -213,7 +230,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fridge_gui"
+      "registry_name": "fridge_gui",
+      "path": "~/blocks"
     },
     {
       "name": "GotBeer",
@@ -222,7 +240,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "got_beer"
+      "registry_name": "got_beer",
+      "path": "~/food"
     },
     {
       "name": "Blockofruby",
@@ -231,7 +250,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blockofruby"
+      "registry_name": "blockofruby",
+      "path": "~/Rubys"
     },
     {
       "name": "Rubyore",
@@ -240,7 +260,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rubyore"
+      "registry_name": "rubyore",
+      "path": "~/Rubys"
     },
     {
       "name": "Ruby",
@@ -249,7 +270,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ruby"
+      "registry_name": "ruby",
+      "path": "~/Rubys"
     },
     {
       "name": "GrapePlantEmpty",
@@ -258,7 +280,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "grape_plant_empty"
+      "registry_name": "grape_plant_empty",
+      "path": "~/food"
     },
     {
       "name": "GrapePlant",
@@ -267,7 +290,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "grape_plant"
+      "registry_name": "grape_plant",
+      "path": "~/food"
     },
     {
       "name": "GrapePlantEmptyClientDisplayRandomTick",
@@ -296,7 +320,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/food"
     },
     {
       "name": "GrapePlantPlantRightClicked",
@@ -325,7 +350,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/food"
     },
     {
       "name": "VillagerGUI",
@@ -334,7 +360,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "villager_gui"
+      "registry_name": "villager_gui",
+      "path": "~/Rubys"
     },
     {
       "name": "Villager",
@@ -343,7 +370,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "villager"
+      "registry_name": "villager",
+      "path": "~/Villager stuff"
     },
     {
       "name": "VillagerForrest",
@@ -352,7 +380,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "villager_forrest"
+      "registry_name": "villager_forrest",
+      "path": "~/Villager stuff"
     },
     {
       "name": "Village",
@@ -361,7 +390,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "village"
+      "registry_name": "village",
+      "path": "~/Villager stuff"
     },
     {
       "name": "Rubyshovel",
@@ -370,7 +400,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rubyshovel"
+      "registry_name": "rubyshovel",
+      "path": "~/Rubys"
     },
     {
       "name": "Rubyaxe",
@@ -379,7 +410,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rubyaxe"
+      "registry_name": "rubyaxe",
+      "path": "~/Rubys"
     },
     {
       "name": "Rubyhoe",
@@ -388,7 +420,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rubyhoe"
+      "registry_name": "rubyhoe",
+      "path": "~/Rubys"
     },
     {
       "name": "Rubysword",
@@ -397,7 +430,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rubysword"
+      "registry_name": "rubysword",
+      "path": "~/Rubys"
     },
     {
       "name": "Rubypickaxe",
@@ -406,7 +440,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rubypickaxe"
+      "registry_name": "rubypickaxe",
+      "path": "~/Rubys"
     }
   ],
   "variable_elements": [],
@@ -430,12 +465,12 @@
   ],
   "language_map": {
     "en_us": {
-      "item.ancient_villages.ruby": "Ruby",
       "item.ancient_villages.dark_dimension": "Infected flint and steel",
+      "item.ancient_villages.ruby": "Ruby",
       "biome.ancient_villages.villager_forrest": "Villager Forrest",
       "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
-      "item.ancient_villages.rubyhoe": "Ruby Hoe",
       "item.ancient_villages.dark_disk": "Music disc",
+      "item.ancient_villages.rubyhoe": "Ruby Hoe",
       "block.ancient_villages.ashed_grass": "Ashed Grass",
       "item.ancient_villages.glow_water_bucket": "GlowWater Bucket",
       "item.ancient_villages.dark_disk.desc": "Elias Brix - Darkwave",
@@ -469,6 +504,26 @@
     "children": [
       {
         "name": "Tools",
+        "children": []
+      },
+      {
+        "name": "Dark Dimension",
+        "children": []
+      },
+      {
+        "name": "Rubys",
+        "children": []
+      },
+      {
+        "name": "Villager stuff",
+        "children": []
+      },
+      {
+        "name": "blocks",
+        "children": []
+      },
+      {
+        "name": "food",
         "children": []
       }
     ]
