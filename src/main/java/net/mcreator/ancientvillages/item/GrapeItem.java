@@ -27,18 +27,13 @@ public class GrapeItem extends AncientVillagesModElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(4).saturation(0.3f).build()));
+					.food((new Food.Builder()).hunger(4).saturation(0.3f).setAlwaysEdible().build()));
 			setRegistryName("grape");
 		}
 
 		@Override
 		public UseAction getUseAction(ItemStack itemstack) {
-			return UseAction.DRINK;
-		}
-
-		@Override
-		public net.minecraft.util.SoundEvent getEatSound() {
-			return net.minecraft.util.SoundEvents.ENTITY_GENERIC_DRINK;
+			return UseAction.EAT;
 		}
 	}
 }

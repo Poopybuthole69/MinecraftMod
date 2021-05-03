@@ -3,24 +3,27 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "grape",
+    "texture": "beer",
     "customModelName": "Normal",
-    "name": "Grape",
+    "name": "Quick Beer",
     "rarity": "COMMON",
     "specialInfo": [],
     "creativeTab": {
       "value": "FOOD"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "nutritionalValue": 4,
-    "saturation": 0.3,
-    "eatingSpeed": 32,
+    "saturation": 1.0,
+    "eatingSpeed": 8,
     "resultItem": {
       "value": ""
     },
     "forDogs": false,
     "isAlwaysEdible": true,
-    "animation": "eat",
-    "hasGlow": false
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "BeerFoodEaten"
+    }
   }
 }

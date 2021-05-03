@@ -179,6 +179,32 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "wii_sports_disc"
+    },
+    {
+      "name": "BeerFoodEaten",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beer_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beer",
+      "type": "food",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beer"
     }
   ],
   "variable_elements": [],
@@ -204,6 +230,7 @@
     "en_us": {
       "item.ancient_villages.dark_dimension": "Infected flint and steel",
       "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
+      "item.ancient_villages.beer": "Quick Beer",
       "item.ancient_villages.dark_disk": "Music disc",
       "block.ancient_villages.ashed_grass": "Ashed Grass",
       "item.ancient_villages.glow_water_bucket": "GlowWater Bucket",
