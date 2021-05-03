@@ -326,6 +326,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "VillagerGUI",
+      "type": "gui",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "villager_gui"
+    },
+    {
+      "name": "Villager",
+      "type": "mob",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "villager"
     }
   ],
   "variable_elements": [],
@@ -357,7 +375,9 @@
       "item.ancient_villages.glow_water_bucket": "GlowWater Bucket",
       "item.ancient_villages.dark_disk.desc": "Elias Brix - Darkwave",
       "fluid.dark_water": "DarkWater",
+      "entity.ancient_villages.villager": "Villager",
       "item.ancient_villages.dark_water_bucket": "DarkWater Bucket",
+      "item.ancient_villages.villager_spawn_egg": "Villager Spawn Egg",
       "subtitles.wiisports": "Wii Sports - Wii Sports Music",
       "item.ancient_villages.wii_sports_disc": "Wii Sports Disc",
       "item.ancient_villages.beer": "Quick Beer",
