@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "ancient_villages:blocks/grape_bush",
+    "particle": "ancient_villages:blocks/grape_bush"
+  }
+}
