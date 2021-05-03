@@ -326,6 +326,51 @@
           }
         ]
       }
+    },
+    {
+      "name": "Rubysword",
+      "type": "tool",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubysword"
+    },
+    {
+      "name": "Rubypickaxe",
+      "type": "tool",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubypickaxe"
+    },
+    {
+      "name": "Rubyaxe",
+      "type": "tool",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyaxe"
+    },
+    {
+      "name": "Rubyshovel",
+      "type": "tool",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyshovel"
+    },
+    {
+      "name": "Rubyhoe",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyhoe"
     }
   ],
   "variable_elements": [],
@@ -353,13 +398,16 @@
       "item.ancient_villages.ruby": "Ruby",
       "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
       "item.ancient_villages.dark_disk": "Music disc",
+      "item.ancient_villages.rubyhoe": "Ruby Hoe",
       "block.ancient_villages.ashed_grass": "Ashed Grass",
       "item.ancient_villages.glow_water_bucket": "GlowWater Bucket",
       "item.ancient_villages.dark_disk.desc": "Elias Brix - Darkwave",
       "fluid.dark_water": "DarkWater",
       "item.ancient_villages.dark_water_bucket": "DarkWater Bucket",
       "subtitles.wiisports": "Wii Sports - Wii Sports Music",
+      "item.ancient_villages.rubyshovel": "Ruby Shovel",
       "item.ancient_villages.wii_sports_disc": "Wii Sports Disc",
+      "item.ancient_villages.rubysword": "Ruby Sword",
       "item.ancient_villages.beer": "Quick Beer",
       "subtitles.dark_disk_music": "Dark disk",
       "item.ancient_villages.grape": "Grape",
@@ -367,17 +415,24 @@
       "block.ancient_villages.fridge": "Fridge",
       "block.ancient_villages.ashed_dirt": "Ashed Dirt",
       "block.ancient_villages.rubyore": "Rubyore",
+      "item.ancient_villages.rubyaxe": "Ruby Axe",
       "block.ancient_villages.grape_plant": "Grape Plant",
       "advancements.going_too_deep.title": "Going Too Deep",
       "advancements.going_too_deep.descr": "You\u0027ve went too far, and too deep",
       "fluid.glow_water": "GlowWater",
+      "item.ancient_villages.rubypickaxe": "Ruby Pickaxe",
       "block.ancient_villages.gold_bricks": "Plated Gold Bricks",
       "block.ancient_villages.grape_plant_empty": "Grape Plant Empty"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Tools",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "ancient_villages",
@@ -393,6 +448,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.ancientvillages",
     "lockBaseModFiles": false
   },
