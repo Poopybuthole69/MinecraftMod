@@ -170,6 +170,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "grape"
+    },
+    {
+      "name": "WiiSportsDisc",
+      "type": "musicdisc",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wii_sports_disc"
     }
   ],
   "variable_elements": [],
@@ -181,11 +190,20 @@
       ],
       "category": "record",
       "subtitle": "Dark disk"
+    },
+    {
+      "name": "wiisports",
+      "files": [
+        "wii_sports_-_wii_sports_theme"
+      ],
+      "category": "record",
+      "subtitle": "Wii Sports - Wii Sports Music"
     }
   ],
   "language_map": {
     "en_us": {
       "item.ancient_villages.dark_dimension": "Infected flint and steel",
+      "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
       "item.ancient_villages.dark_disk": "Music disc",
       "block.ancient_villages.ashed_grass": "Ashed Grass",
       "item.ancient_villages.glow_water_bucket": "GlowWater Bucket",
@@ -197,9 +215,11 @@
       "block.ancient_villages.ashed_dirt": "Ashed Dirt",
       "item.ancient_villages.dark_water_bucket": "DarkWater Bucket",
       "advancements.going_too_deep.title": "Going Too Deep",
+      "subtitles.wiisports": "Wii Sports - Wii Sports Music",
       "advancements.going_too_deep.descr": "You\u0027ve went too far, and too deep",
       "fluid.glow_water": "GlowWater",
-      "block.ancient_villages.gold_bricks": "Plated Gold Bricks"
+      "block.ancient_villages.gold_bricks": "Plated Gold Bricks",
+      "item.ancient_villages.wii_sports_disc": "Wii Sports Disc"
     }
   },
   "foldersRoot": {

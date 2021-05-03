@@ -1,5 +1,6 @@
 {
   "item.ancient_villages.dark_dimension": "Infected flint and steel",
+  "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
   "item.ancient_villages.dark_disk": "Music disc",
   "block.ancient_villages.ashed_grass": "Ashed Grass",
   "item.ancient_villages.glow_water_bucket": "GlowWater Bucket",
@@ -11,7 +12,9 @@
   "block.ancient_villages.ashed_dirt": "Ashed Dirt",
   "item.ancient_villages.dark_water_bucket": "DarkWater Bucket",
   "advancements.going_too_deep.title": "Going Too Deep",
+  "subtitles.wiisports": "Wii Sports - Wii Sports Music",
   "advancements.going_too_deep.descr": "You\u0027ve went too far, and too deep",
   "fluid.glow_water": "GlowWater",
-  "block.ancient_villages.gold_bricks": "Plated Gold Bricks"
+  "block.ancient_villages.gold_bricks": "Plated Gold Bricks",
+  "item.ancient_villages.wii_sports_disc": "Wii Sports Disc"
 }
