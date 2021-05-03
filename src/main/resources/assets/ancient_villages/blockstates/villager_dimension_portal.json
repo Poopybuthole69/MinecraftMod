@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "ancient_villages:block/villager_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "ancient_villages:block/villager_dimension_portal_ns"
+    }
+  }
+}
