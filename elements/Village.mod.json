@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "structure",
   "definition": {
-    "structure": "village1",
+    "structure": "village_town",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 1000,

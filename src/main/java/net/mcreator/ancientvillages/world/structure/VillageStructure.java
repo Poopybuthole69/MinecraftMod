@@ -70,7 +70,7 @@ public class VillageStructure extends AncientVillagesModElements.ModElement {
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("ancient_villages", "village1"));
+									.getTemplateDefaulted(new ResourceLocation("ancient_villages", "village_town"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo,
