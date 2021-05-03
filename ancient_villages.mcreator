@@ -444,6 +444,19 @@
       "path": "~/Rubys"
     },
     {
+      "name": "VillagerDimension",
+      "type": "dimension",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "villager_dimension",
+      "metadata": {
+        "ep": true
+      },
+      "path": "~/Villager stuff"
+    },
+    {
       "name": "VillagerPlains",
       "type": "biome",
       "sortid": 21,
@@ -464,19 +477,6 @@
       "path": "~/Villager stuff"
     },
     {
-      "name": "VillagerDimension",
-      "type": "dimension",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "villager_dimension",
-      "metadata": {
-        "ep": true
-      },
-      "path": "~/Villager stuff"
-    },
-    {
       "name": "FridgeRecipe",
       "type": "recipe",
       "sortid": 23,
@@ -485,6 +485,16 @@
       "ids": {},
       "registry_name": "fridge_recipe",
       "path": "~/blocks"
+    },
+    {
+      "name": "Blockofrubycraft",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blockofrubycraft",
+      "path": "~/Rubys"
     }
   ],
   "variable_elements": [],
@@ -553,11 +563,11 @@
         "children": []
       },
       {
-        "name": "Dark Dimension",
+        "name": "Rubys",
         "children": []
       },
       {
-        "name": "Rubys",
+        "name": "food",
         "children": []
       },
       {
@@ -565,11 +575,11 @@
         "children": []
       },
       {
-        "name": "blocks",
+        "name": "Dark Dimension",
         "children": []
       },
       {
-        "name": "food",
+        "name": "blocks",
         "children": []
       }
     ]
