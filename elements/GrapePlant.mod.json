@@ -80,6 +80,9 @@
       {
         "value": "jungle_edge"
       }
-    ]
+    ],
+    "onRightClicked": {
+      "name": "GrapePlantPlantRightClicked"
+    }
   }
 }
