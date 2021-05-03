@@ -42,6 +42,8 @@ import net.minecraft.particles.ParticleTypes;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.ancientvillages.block.HardenedLogFullBlock;
+import net.mcreator.ancientvillages.block.HardenedLogBlock;
 import net.mcreator.ancientvillages.block.GrapePlantBlock;
 import net.mcreator.ancientvillages.AncientVillagesModElements;
 
@@ -73,8 +75,8 @@ public class VillagerPlainsBiome extends AncientVillagesModElements.ModElement {
 				biomeGenerationSettings.withStructure(StructureFeatures.MANSION);
 				biomeGenerationSettings.withStructure(StructureFeatures.JUNGLE_PYRAMID);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.JUNGLE_LOG.getDefaultState()),
-								new SimpleBlockStateProvider(Blocks.JUNGLE_WOOD.getDefaultState()),
+						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(HardenedLogBlock.block.getDefaultState()),
+								new SimpleBlockStateProvider(HardenedLogFullBlock.block.getDefaultState()),
 								new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
 								new StraightTrunkPlacer(7, 2, 0), new TwoLayerFeature(1, 0, 1)))
 										.setDecorators(ImmutableList.of(new CustomCocoaTreeDecorator())).setMaxWaterDepth(0).build())

@@ -54,10 +54,10 @@
     "minHeight": 7,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": "Blocks.LOG#3"
+      "value": "CUSTOM:HardenedLog"
     },
     "treeBranch": {
-      "value": "Blocks.JUNGLE_WOOD"
+      "value": "CUSTOM:HardenedLogFull"
     },
     "treeVines": {
       "value": ""

@@ -513,6 +513,26 @@
         ]
       },
       "path": "~/blocks"
+    },
+    {
+      "name": "HardenedLog",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_log",
+      "path": "~/blocks"
+    },
+    {
+      "name": "HardenedLogFull",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_log_full",
+      "path": "~/blocks"
     }
   ],
   "variable_elements": [],
@@ -540,8 +560,8 @@
       "item.ancient_villages.ruby": "Ruby",
       "biome.ancient_villages.villager_forrest": "Villager Forrest",
       "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
-      "item.ancient_villages.rubyhoe": "Ruby Hoe",
       "item.ancient_villages.dark_disk": "Music disc",
+      "item.ancient_villages.rubyhoe": "Ruby Hoe",
       "block.ancient_villages.ashed_grass": "Ashed Grass",
       "item.ancient_villages.glow_water_bucket": "GlowWater Bucket",
       "item.ancient_villages.dark_disk.desc": "Elias Brix - Darkwave",
@@ -551,10 +571,12 @@
       "item.ancient_villages.villager_spawn_egg": "Villager Spawn Egg",
       "subtitles.wiisports": "Wii Sports - Wii Sports Music",
       "item.ancient_villages.rubyshovel": "Ruby Shovel",
+      "block.ancient_villages.hardened_log_full": "Hardened Log Full",
       "item.ancient_villages.wii_sports_disc": "Wii Sports Disc",
       "biome.ancient_villages.villager_plains": "Villager Plains",
       "item.ancient_villages.rubysword": "Ruby Sword",
       "item.ancient_villages.beer": "Quick Beer",
+      "block.ancient_villages.hardened_log": "Hardened Log",
       "subtitles.dark_disk_music": "Dark disk",
       "item.ancient_villages.grape": "Grape",
       "block.ancient_villages.blockofruby": "Blockofruby",
