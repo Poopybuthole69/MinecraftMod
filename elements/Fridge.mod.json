@@ -101,8 +101,14 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "FridgeBlockIsPlacedBy"
+    },
     "onDestroyedByExplosion": {
       "name": "FridgeBlockDestroyedByExplosion"
+    },
+    "onBlockPlayedBy": {
+      "name": "FridgeBlockIsPlacedBy"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

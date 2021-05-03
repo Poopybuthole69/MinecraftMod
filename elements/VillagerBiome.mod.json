@@ -4,10 +4,10 @@
   "definition": {
     "name": "Villager Biome",
     "groundBlock": {
-      "value": "Blocks.MAGMA"
+      "value": "Blocks.BASALT"
     },
     "undergroundBlock": {
-      "value": "Blocks.LAVA"
+      "value": "Blocks.OBSIDIAN"
     },
     "airColor": {
       "value": -10092544,

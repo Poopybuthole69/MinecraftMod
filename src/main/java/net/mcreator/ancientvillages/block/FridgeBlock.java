@@ -49,12 +49,14 @@ import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.ancientvillages.procedures.FridgeBlockIsPlacedByProcedure;
 import net.mcreator.ancientvillages.procedures.FridgeBlockDestroyedByExplosionProcedure;
 import net.mcreator.ancientvillages.gui.FridgeGUIGui;
 import net.mcreator.ancientvillages.AncientVillagesModElements;
@@ -142,6 +144,19 @@ public class FridgeBlock extends AncientVillagesModElements.ModElement {
 		}
 
 		@Override
+		public void onBlockPlacedBy(World world, BlockPos pos, BlockState state, LivingEntity entity, ItemStack itemstack) {
+			super.onBlockPlacedBy(world, pos, state, entity, itemstack);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				FridgeBlockIsPlacedByProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
 		public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand,
 				BlockRayTraceResult hit) {
 			super.onBlockActivated(state, world, pos, entity, hand, hit);
@@ -161,6 +176,12 @@ public class FridgeBlock extends AncientVillagesModElements.ModElement {
 								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
 					}
 				}, new BlockPos(x, y, z));
+			}
+			Direction direction = hit.getFace();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				FridgeBlockIsPlacedByProcedure.executeProcedure($_dependencies);
 			}
 			return ActionResultType.SUCCESS;
 		}
