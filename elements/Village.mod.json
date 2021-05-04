@@ -2,8 +2,8 @@
   "_fv": 18,
   "_type": "structure",
   "definition": {
-    "structure": "village_town",
-    "randomlyRotateStructure": true,
+    "structure": "house1",
+    "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 1000,
     "minCountPerChunk": 1,
@@ -19,6 +19,15 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:VillagerForrest"
+      },
+      {
+        "value": "CUSTOM:VillagerPlains"
+      },
+      {
+        "value": "CUSTOM:VillagerBiome"
+      },
+      {
+        "value": "savanna"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

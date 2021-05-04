@@ -94,7 +94,9 @@ public class Villager2Entity extends AncientVillagesModElements.ModElement {
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("ancient_villages:villager_forrest").equals(event.getName()))
+		if (new ResourceLocation("ancient_villages:villager_plains").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("savanna").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;

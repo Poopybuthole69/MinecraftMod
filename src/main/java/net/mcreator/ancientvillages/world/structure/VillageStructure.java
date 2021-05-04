@@ -63,14 +63,14 @@ public class VillageStructure extends AncientVillagesModElements.ModElement {
 							int k = ck + random.nextInt(16);
 							int j = world.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
 							j -= 1;
-							Rotation rotation = Rotation.values()[random.nextInt(3)];
-							Mirror mirror = Mirror.values()[random.nextInt(2)];
+							Rotation rotation = Rotation.NONE;
+							Mirror mirror = Mirror.NONE;
 							BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("ancient_villages", "village_town"));
+									.getTemplateDefaulted(new ResourceLocation("ancient_villages", "house1"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo,
@@ -92,6 +92,12 @@ public class VillageStructure extends AncientVillagesModElements.ModElement {
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
 		if (new ResourceLocation("ancient_villages:villager_forrest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("ancient_villages:villager_plains").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("ancient_villages:villager_biome").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("savanna").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;

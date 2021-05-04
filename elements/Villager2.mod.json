@@ -117,7 +117,10 @@
     "maxNumberOfMobsPerGroup": 5,
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:VillagerForrest"
+        "value": "CUSTOM:VillagerPlains"
+      },
+      {
+        "value": "savanna"
       }
     ],
     "spawnInDungeons": false

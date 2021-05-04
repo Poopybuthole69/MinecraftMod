@@ -43,7 +43,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.monster.SkeletonEntity;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -98,6 +98,8 @@ public class VillagerEntity extends AncientVillagesModElements.ModElement {
 		boolean biomeCriteria = false;
 		if (new ResourceLocation("ancient_villages:villager_forrest").equals(event.getName()))
 			biomeCriteria = true;
+		if (new ResourceLocation("ancient_villages:villager_biome").equals(event.getName()))
+			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
 		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 20, 2, 5));
@@ -123,7 +125,7 @@ public class VillagerEntity extends AncientVillagesModElements.ModElement {
 		}
 	}
 
-	public static class CustomEntity extends SkeletonEntity implements IRangedAttackMob {
+	public static class CustomEntity extends MonsterEntity implements IRangedAttackMob {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}

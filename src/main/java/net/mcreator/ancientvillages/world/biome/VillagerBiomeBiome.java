@@ -83,7 +83,7 @@ public class VillagerBiomeBiome extends AncientVillagesModElements.ModElement {
 								.getValue(new ResourceLocation("ambient.crimson_forest.additions")), 0.0111D))
 						.setParticle(new ParticleEffectAmbience(ParticleTypes.WHITE_ASH, 0.005f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.BASALT.getDefaultState(),
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.COBBLESTONE.getDefaultState(),
 								Blocks.OBSIDIAN.getDefaultState(), Blocks.OBSIDIAN.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
 				biomeGenerationSettings.withStructure(StructureFeatures.VILLAGE_DESERT);
@@ -123,12 +123,12 @@ public class VillagerBiomeBiome extends AncientVillagesModElements.ModElement {
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
-										ImmutableList.of(Blocks.BASALT.getDefaultState(), Blocks.OBSIDIAN.getDefaultState())))
+										ImmutableList.of(Blocks.COBBLESTONE.getDefaultState(), Blocks.OBSIDIAN.getDefaultState())))
 								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(2));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
-										ImmutableList.of(Blocks.BASALT.getDefaultState(), Blocks.OBSIDIAN.getDefaultState())))
+										ImmutableList.of(Blocks.COBBLESTONE.getDefaultState(), Blocks.OBSIDIAN.getDefaultState())))
 								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(2));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(
