@@ -150,6 +150,24 @@
         "maxGroup": 4,
         "weight": 6,
         "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Villager"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Villager3"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
       }
     ]
   }

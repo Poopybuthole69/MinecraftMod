@@ -29,8 +29,11 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.RegistryKey;
+import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.Blocks;
 
+import net.mcreator.ancientvillages.entity.VillagerEntity;
+import net.mcreator.ancientvillages.entity.Villager3Entity;
 import net.mcreator.ancientvillages.AncientVillagesModElements;
 
 @AncientVillagesModElements.ModElement.Tag
@@ -68,6 +71,8 @@ public class VillagerForrestBiome extends AncientVillagesModElements.ModElement 
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
+				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(VillagerEntity.entity, 20, 4, 4));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(Villager3Entity.entity, 20, 4, 4));
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.JUNGLE).depth(0.1f).scale(0.2f)
 						.temperature(1.1f).downfall(0.3f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();

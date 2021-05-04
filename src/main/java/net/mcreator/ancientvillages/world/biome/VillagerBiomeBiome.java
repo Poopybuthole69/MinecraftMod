@@ -56,6 +56,8 @@ import net.minecraft.block.HugeMushroomBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.ancientvillages.entity.VillagerEntity;
+import net.mcreator.ancientvillages.entity.Villager3Entity;
 import net.mcreator.ancientvillages.AncientVillagesModElements;
 
 import java.util.Set;
@@ -147,6 +149,8 @@ public class VillagerBiomeBiome extends AncientVillagesModElements.ModElement {
 				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.HUSK, 5, 1, 6));
 				mobSpawnInfo.withSpawner(EntityClassification.AMBIENT, new MobSpawnInfo.Spawners(EntityType.ZOMBIE_HORSE, 1, 2, 2));
 				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.field_242287_aj, 6, 1, 4));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(VillagerEntity.entity, 20, 4, 4));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(Villager3Entity.entity, 20, 4, 4));
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(0.1f).scale(0.2f).temperature(0.5f)
 						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
