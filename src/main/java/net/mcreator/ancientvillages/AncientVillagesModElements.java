@@ -45,6 +45,8 @@ public class AncientVillagesModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public AncientVillagesModElements() {
+		sounds.put(new ResourceLocation("ancient_villages", "gunshot"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("ancient_villages", "gunshot")));
 		sounds.put(new ResourceLocation("ancient_villages", "dark_disk_music"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("ancient_villages", "dark_disk_music")));
 		sounds.put(new ResourceLocation("ancient_villages", "wiisports"),
