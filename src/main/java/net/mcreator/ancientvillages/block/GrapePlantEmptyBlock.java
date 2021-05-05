@@ -7,6 +7,7 @@ import net.minecraftforge.common.PlantType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
@@ -24,9 +25,13 @@ import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.ancientvillages.procedures.GrapePlantEmptyClientDisplayRandomTickProcedure;
 import net.mcreator.ancientvillages.AncientVillagesModElements;
 
+import java.util.Random;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 @AncientVillagesModElements.ModElement.Tag
@@ -76,6 +81,21 @@ public class GrapePlantEmptyBlock extends AncientVillagesModElements.ModElement 
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
 			return PlantType.PLAINS;
+		}
+
+		@Override
+		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				GrapePlantEmptyClientDisplayRandomTickProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

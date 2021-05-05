@@ -149,24 +149,6 @@
       "path": "~/blocks"
     },
     {
-      "name": "FridgeBlockDestroyedByExplosion",
-      "type": "procedure",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "fridge_block_destroyed_by_explosion",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/blocks"
-    },
-    {
       "name": "Fridge",
       "type": "block",
       "sortid": 8,
@@ -495,10 +477,88 @@
       "ids": {},
       "registry_name": "blockofrubycraft",
       "path": "~/Rubys"
+    },
+    {
+      "name": "HardenedLog",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_log",
+      "path": "~/blocks"
+    },
+    {
+      "name": "HardenedLogFull",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_log_full",
+      "path": "~/blocks"
+    },
+    {
+      "name": "Ammo",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ammo",
+      "path": "~/Tools"
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bullet",
+      "path": "~/Tools"
+    },
+    {
+      "name": "Gun",
+      "type": "gun",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gun",
+      "path": "~/Tools"
+    },
+    {
+      "name": "Villager2",
+      "type": "mob",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "villager_2",
+      "path": "~/Villager stuff"
+    },
+    {
+      "name": "Villager3",
+      "type": "mob",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "villager_3",
+      "path": "~/Villager stuff"
     }
   ],
   "variable_elements": [],
   "sound_elements": [
+    {
+      "name": "gunshot",
+      "files": [
+        "realistic_gunshot_sound_effect"
+      ],
+      "category": "player",
+      "subtitle": "bang!"
+    },
     {
       "name": "dark_disk_music",
       "files": [
@@ -518,31 +578,43 @@
   ],
   "language_map": {
     "en_us": {
-      "item.ancient_villages.dark_dimension": "Infected flint and steel",
+      "item.ancient_villages.villager_2_spawn_egg": "Villager Spawn Egg",
       "item.ancient_villages.ruby": "Ruby",
+      "item.ancient_villages.dark_dimension": "Infected flint and steel",
       "biome.ancient_villages.villager_forrest": "Villager Forrest",
       "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
-      "item.ancient_villages.dark_disk": "Music disc",
       "item.ancient_villages.rubyhoe": "Ruby Hoe",
+      "item.ancient_villages.dark_disk": "Music disc",
+      "item.ancient_villages.ammo": "Ammo",
       "block.ancient_villages.ashed_grass": "Ashed Grass",
       "item.ancient_villages.glow_water_bucket": "GlowWater Bucket",
       "item.ancient_villages.dark_disk.desc": "Elias Brix - Darkwave",
+      "entity.ancient_villages.villager_3": "Villager",
+      "entity.ancient_villages.villager_2": "Villager",
       "fluid.dark_water": "DarkWater",
+      "subtitles.gunshot": "bang!",
       "entity.ancient_villages.villager": "Villager",
       "item.ancient_villages.dark_water_bucket": "DarkWater Bucket",
       "item.ancient_villages.villager_spawn_egg": "Villager Spawn Egg",
       "subtitles.wiisports": "Wii Sports - Wii Sports Music",
       "item.ancient_villages.rubyshovel": "Ruby Shovel",
+      "block.ancient_villages.hardened_log_full": "Hardened Log Full",
       "item.ancient_villages.wii_sports_disc": "Wii Sports Disc",
       "biome.ancient_villages.villager_plains": "Villager Plains",
+      "advancements.got_beer.title": "Drink Beer",
       "item.ancient_villages.rubysword": "Ruby Sword",
       "item.ancient_villages.beer": "Quick Beer",
+      "block.ancient_villages.hardened_log": "Hardened Log",
+      "item.ancient_villages.bullet": "Bullet",
+      "item.ancient_villages.villager_3_spawn_egg": "Villager Spawn Egg",
       "subtitles.dark_disk_music": "Dark disk",
       "item.ancient_villages.grape": "Grape",
-      "block.ancient_villages.blockofruby": "Blockofruby",
+      "block.ancient_villages.blockofruby": "Block of Ruby",
+      "item.ancient_villages.gun": "Gun",
       "block.ancient_villages.fridge": "Fridge",
       "block.ancient_villages.ashed_dirt": "Ashed Dirt",
-      "block.ancient_villages.rubyore": "Rubyore",
+      "block.ancient_villages.rubyore": "Ruby Ore",
+      "advancements.got_beer.descr": "You just drink you first beer!",
       "item.ancient_villages.rubyaxe": "Ruby Axe",
       "block.ancient_villages.grape_plant": "Grape Plant",
       "advancements.going_too_deep.title": "Going Too Deep",

@@ -4,10 +4,10 @@
   "definition": {
     "name": "Villager Biome",
     "groundBlock": {
-      "value": "Blocks.MAGMA"
+      "value": "Blocks.COBBLESTONE"
     },
     "undergroundBlock": {
-      "value": "Blocks.LAVA"
+      "value": "Blocks.OBSIDIAN"
     },
     "airColor": {
       "value": -10092544,
@@ -112,7 +112,7 @@
         },
         "minGroup": 1,
         "maxGroup": 1,
-        "weight": 20,
+        "weight": 2,
         "spawnType": "monster"
       },
       {
@@ -149,6 +149,24 @@
         "minGroup": 1,
         "maxGroup": 4,
         "weight": 6,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Villager"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Villager3"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
         "spawnType": "monster"
       }
     ]

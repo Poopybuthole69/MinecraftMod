@@ -92,6 +92,21 @@
           "x": 240,
           "y": 78
         }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 277,
+          "y": 59
+        }
       }
     ]
   }

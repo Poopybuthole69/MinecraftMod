@@ -45,7 +45,6 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
@@ -53,8 +52,6 @@ import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.IRangedAttackMob;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
@@ -63,9 +60,9 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.block.material.Material;
 
-import net.mcreator.ancientvillages.item.GunItem;
+import net.mcreator.ancientvillages.item.RubyswordItem;
 import net.mcreator.ancientvillages.gui.VillagerGUIGui;
-import net.mcreator.ancientvillages.entity.renderer.VillagerRenderer;
+import net.mcreator.ancientvillages.entity.renderer.Villager3Renderer;
 import net.mcreator.ancientvillages.AncientVillagesModElements;
 
 import javax.annotation.Nullable;
@@ -74,11 +71,11 @@ import javax.annotation.Nonnull;
 import io.netty.buffer.Unpooled;
 
 @AncientVillagesModElements.ModElement.Tag
-public class VillagerEntity extends AncientVillagesModElements.ModElement {
+public class Villager3Entity extends AncientVillagesModElements.ModElement {
 	public static EntityType entity = null;
-	public VillagerEntity(AncientVillagesModElements instance) {
-		super(instance, 16);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new VillagerRenderer.ModelRegisterHandler());
+	public Villager3Entity(AncientVillagesModElements instance) {
+		super(instance, 30);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new Villager3Renderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -87,10 +84,10 @@ public class VillagerEntity extends AncientVillagesModElements.ModElement {
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f))
-						.build("villager").setRegistryName("villager");
+						.build("villager_3").setRegistryName("villager_3");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -6737152, -10092442, new Item.Properties().group(ItemGroup.MISC))
-				.setRegistryName("villager_spawn_egg"));
+				.setRegistryName("villager_3_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -116,16 +113,16 @@ public class VillagerEntity extends AncientVillagesModElements.ModElement {
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
 			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.2);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 35);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 45);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 20);
-			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.6);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 0.3);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 25);
+			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 1);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 3);
 			event.put(entity, ammma.create());
 		}
 	}
 
-	public static class CustomEntity extends MonsterEntity implements IRangedAttackMob {
+	public static class CustomEntity extends MonsterEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -136,7 +133,7 @@ public class VillagerEntity extends AncientVillagesModElements.ModElement {
 			setNoAI(false);
 			setCustomName(new StringTextComponent("Villager"));
 			setCustomNameVisible(true);
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(GunItem.block, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(RubyswordItem.block, (int) (1)));
 		}
 
 		@Override
@@ -150,15 +147,9 @@ public class VillagerEntity extends AncientVillagesModElements.ModElement {
 			this.targetSelector.addGoal(1, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 6, true));
 			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 2, true));
-			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 0.3));
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(6, new SwimGoal(this));
-			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
-				@Override
-				public boolean shouldContinueExecuting() {
-					return this.shouldExecute();
-				}
-			});
 		}
 
 		@Override
@@ -255,10 +246,6 @@ public class VillagerEntity extends AncientVillagesModElements.ModElement {
 			double z = this.getPosZ();
 			Entity entity = this;
 			return retval;
-		}
-
-		public void attackEntityWithRangedAttack(LivingEntity target, float flval) {
-			GunItem.shoot(this, target);
 		}
 	}
 }

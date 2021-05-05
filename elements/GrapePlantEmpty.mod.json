@@ -62,6 +62,9 @@
     "canBePlacedOn": [],
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
-    "restrictionBiomes": []
+    "restrictionBiomes": [],
+    "onTickUpdate": {
+      "name": "GrapePlantEmptyClientDisplayRandomTick"
+    }
   }
 }

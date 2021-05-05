@@ -1,0 +1,39 @@
+{
+  "_fv": 18,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "bow",
+    "customModelName": "Normal",
+    "name": "Gun",
+    "specialInfo": [
+      "Gun to shoot"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:Ammo"
+    },
+    "shootConstantly": false,
+    "usageCount": 45,
+    "actionSound": {
+      "value": "CUSTOM:gunshot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 1.5,
+    "bulletPower": 5.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 3,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Bullet"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "bullet.png"
+  }
+}
