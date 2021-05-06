@@ -578,9 +578,9 @@
   ],
   "language_map": {
     "en_us": {
-      "item.ancient_villages.villager_2_spawn_egg": "Villager Spawn Egg",
-      "item.ancient_villages.ruby": "Ruby",
       "item.ancient_villages.dark_dimension": "Infected flint and steel",
+      "item.ancient_villages.ruby": "Ruby",
+      "item.ancient_villages.villager_2_spawn_egg": "Villager Spawn Egg",
       "biome.ancient_villages.villager_forrest": "Villager Forrest",
       "item.ancient_villages.wii_sports_disc.desc": "Wii Sports - Wii Sports Music",
       "item.ancient_villages.rubyhoe": "Ruby Hoe",

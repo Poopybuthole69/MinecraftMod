@@ -56,6 +56,8 @@ import net.minecraft.block.HugeMushroomBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.ancientvillages.entity.VillagerEntity;
+import net.mcreator.ancientvillages.entity.Villager3Entity;
 import net.mcreator.ancientvillages.AncientVillagesModElements;
 
 import java.util.Set;
@@ -83,8 +85,8 @@ public class VillagerBiomeBiome extends AncientVillagesModElements.ModElement {
 								.getValue(new ResourceLocation("ambient.crimson_forest.additions")), 0.0111D))
 						.setParticle(new ParticleEffectAmbience(ParticleTypes.WHITE_ASH, 0.005f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.MAGMA_BLOCK.getDefaultState(),
-								Blocks.LAVA.getDefaultState(), Blocks.LAVA.getDefaultState())));
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.COBBLESTONE.getDefaultState(),
+								Blocks.OBSIDIAN.getDefaultState(), Blocks.OBSIDIAN.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
 				biomeGenerationSettings.withStructure(StructureFeatures.VILLAGE_DESERT);
 				biomeGenerationSettings.withStructure(StructureFeatures.JUNGLE_PYRAMID);
@@ -123,12 +125,12 @@ public class VillagerBiomeBiome extends AncientVillagesModElements.ModElement {
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
-										ImmutableList.of(Blocks.MAGMA_BLOCK.getDefaultState(), Blocks.LAVA.getDefaultState())))
+										ImmutableList.of(Blocks.COBBLESTONE.getDefaultState(), Blocks.OBSIDIAN.getDefaultState())))
 								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(2));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
-										ImmutableList.of(Blocks.MAGMA_BLOCK.getDefaultState(), Blocks.LAVA.getDefaultState())))
+										ImmutableList.of(Blocks.COBBLESTONE.getDefaultState(), Blocks.OBSIDIAN.getDefaultState())))
 								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(2));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(
@@ -142,11 +144,13 @@ public class VillagerBiomeBiome extends AncientVillagesModElements.ModElement {
 				DefaultBiomeFeatures.withDisks(biomeGenerationSettings);
 				DefaultBiomeFeatures.withForestRocks(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.END_CRYSTAL, 20, 1, 1));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.END_CRYSTAL, 2, 1, 1));
 				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.HOGLIN, 5, 1, 3));
 				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.HUSK, 5, 1, 6));
 				mobSpawnInfo.withSpawner(EntityClassification.AMBIENT, new MobSpawnInfo.Spawners(EntityType.ZOMBIE_HORSE, 1, 2, 2));
 				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.field_242287_aj, 6, 1, 4));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(VillagerEntity.entity, 20, 4, 4));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(Villager3Entity.entity, 20, 4, 4));
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(0.1f).scale(0.2f).temperature(0.5f)
 						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
